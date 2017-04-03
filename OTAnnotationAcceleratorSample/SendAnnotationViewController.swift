@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SendAnnotationViewController: UIViewController, OTOneToOneCommunicatorDataSource, OTAnnotatorDataSource {
+class SendAnnotationViewController: UIViewController, OTOneToOneCommunicatorDataSource, OTAnnotatorDataSource, OTAnnotationToolbarViewDataSource {
     
     let annotator = OTAnnotator()
     var sharer: OTOneToOneCommunicator?
@@ -32,23 +32,24 @@ class SendAnnotationViewController: UIViewController, OTOneToOneCommunicatorData
                 else if signal == .subscriberReady {
                     self.sharer?.subscriberView.frame = self.shareView.bounds
                     self.shareView.addSubview(self.sharer!.subscriberView)
-                }
-            }
-        }
-        
-        annotator.dataSource = self
-        annotator.connect {
-            (signal, error) in
-            if error == nil {
-                if signal == .sessionDidConnect {
-                    self.annotator.annotationScrollView.frame = self.shareView.bounds
-                    self.annotator.annotationScrollView.scrollView.contentSize = self.shareView.bounds.size
-                    self.shareView.addSubview(self.annotator.annotationScrollView)
-                    self.annotator.annotationScrollView.annotationView.currentAnnotatable = OTAnnotationPath.init(stroke: UIColor.yellow)
                     
-                    self.annotator.annotationScrollView.initializeToolbarView()
-                    self.annotator.annotationScrollView.toolbarView?.frame = self.toolbarContainer.bounds
-                    self.toolbarContainer.addSubview(self.annotator.annotationScrollView.toolbarView!)
+                    self.annotator.dataSource = self
+                    self.annotator.connect {
+                        (signal, error) in
+                        if error == nil {
+                            if signal == .sessionDidConnect {
+                                self.annotator.annotationScrollView.frame = self.shareView.bounds
+                                self.annotator.annotationScrollView.scrollView.contentSize = self.shareView.bounds.size
+                                self.shareView.addSubview(self.annotator.annotationScrollView)
+                                self.annotator.annotationScrollView.annotationView.currentAnnotatable = OTAnnotationPath.init(stroke: UIColor.yellow)
+                                
+                                self.annotator.annotationScrollView.initializeToolbarView()
+                                self.annotator.annotationScrollView.toolbarView?.toolbarViewDataSource = self
+                                self.annotator.annotationScrollView.toolbarView?.frame = self.toolbarContainer.frame
+                                self.view.addSubview(self.annotator.annotationScrollView.toolbarView!)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -61,6 +62,10 @@ class SendAnnotationViewController: UIViewController, OTOneToOneCommunicatorData
         annotator.disconnect()
         sharer?.subscriberView?.removeFromSuperview()
         let _ = sharer?.disconnect()
+    }
+    
+    func annotationToolbarViewForRootView(forScreenShot toolbarView: OTAnnotationToolbarView!) -> UIView! {
+        return shareView
     }
     
     func sessionOfOTOne(_ oneToOneCommunicator: OTOneToOneCommunicator!) -> OTAcceleratorSession! {

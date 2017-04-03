@@ -232,6 +232,7 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     if (_currentEditingTextView) return;
+    if (!_currentAnnotatable) return;
     
     if (!_localDrawPath || _localDrawPath.points.count != 0) {
         

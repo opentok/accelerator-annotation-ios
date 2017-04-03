@@ -460,7 +460,7 @@ NSString * const kOTAnnotationToolbarDidAddTextAnnotation = @"kOTAnnotationToolb
     }
 }
 
-#pragma mark - ScreenShareEditTextViewProtocol
+#pragma mark - OTAnnotationEditTextViewProtocol
 
 - (void)annotationEditTextViewController:(OTAnnotationEditTextViewController *)editTextViewController
                         didFinishEditing:(OTAnnotationTextView *)annotationTextView {
@@ -470,9 +470,12 @@ NSString * const kOTAnnotationToolbarDidAddTextAnnotation = @"kOTAnnotationToolb
         [self.annotationScrollView addTextAnnotation:annotationTextView];
         annotationTextView.annotationTextViewDelegate = self;
     }
+    else {
+        [self done];
+    }
 }
 
-#pragma mark - ScreenShareColorPickerViewProtocol
+#pragma mark - OTAnnotationColorPickerViewProtocol
 
 - (void)colorPickerView:(OTAnnotationColorPickerView *)colorPickerView
    didSelectColorButton:(OTAnnotationColorPickerViewButton *)button

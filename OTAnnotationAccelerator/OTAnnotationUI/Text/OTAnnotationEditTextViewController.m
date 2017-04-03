@@ -91,6 +91,9 @@
 }
 
 - (IBAction)removeButtonPressed:(id)sender {
+    if (self.delegate) {
+        [self.delegate annotationEditTextViewController:self didFinishEditing:nil];
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
