@@ -15,7 +15,7 @@ describe(@"Initialization of OTAnnotationKitBundle", ^(){
     context(@"An instance of OTAnnotationKitBundle", ^(){
         
         it(@"AnnotationBundle Factory should not be nil", ^{
-            [[[OTAnnotationKitBundle annotationKitBundle] shouldNot] beNil];
+            [[[OTAnnotationAcceleratorBundle annotationAcceleratorBundle] shouldNot] beNil];
         });
     });
 });

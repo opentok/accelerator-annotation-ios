@@ -19,18 +19,6 @@ Pod::Spec.new do |s|
     'OTAnnotationKitBundle' => ['OTAnnotationAcceleratorBundle/**/*']
   }
 
-  s.public_header_files = 'OTAnnotationAccelerator/OTAnnotationKit.h',
-    'OTAnnotationAccelerator/OTAnnotator.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotatable.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotationDataManager.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotationPath.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotationPoint.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotationTextView.h',
-    'OTAnnotationAccelerator/OTAnnotationNative/OTAnnotationView.h',
-    'OTAnnotationAccelerator/OTAnnotationUI/OTAnnotationScrollView.h',
-    'OTAnnotationAccelerator/OTAnnotationUI/OTFullScreenAnnotationViewController.h',
-    'OTAnnotationAccelerator/OTAnnotationUI/Toolbar/OTAnnotationToolbarView.h'
-
   s.dependency 'LHToolbar', '1.3.0-beta'
   s.dependency 'OTAcceleratorCore'
 end
