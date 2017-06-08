@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A0AB576C1D2C392D00F8410B"
+               BuildableName = "OTAnnotationAcceleratorTests.xctest"
+               BlueprintName = "OTAnnotationAcceleratorTests"
+               ReferencedContainer = "container:OTAnnotationAccelerator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

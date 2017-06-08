@@ -142,7 +142,9 @@ NSString * const kOTAnnotationToolbarDidAddTextAnnotation = @"kOTAnnotationToolb
 }
 
 - (void)setShowDoneButton:(BOOL)showDoneButton {
-    [self done];
+    if (_showDoneButton == YES && showDoneButton == NO) {
+        [self done];
+    }
     _showDoneButton = showDoneButton;
 }
 
@@ -234,7 +236,7 @@ NSString * const kOTAnnotationToolbarDidAddTextAnnotation = @"kOTAnnotationToolb
 
 - (void)done {
     
-    if (!self.showDoneButton) {
+    if (!_showDoneButton) {
         return;
     }
     

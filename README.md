@@ -1,24 +1,47 @@
-![logo](../tokbox-logo.png)
-
-# OpenTok Annotations Accelerator Pack for iOS<br/>Version 1.0-Beta
+# OpenTok Annotations Accelerator Pack for iOS<br/> Version 1.0.0-Beta1
 
 This document describes how to use the OpenTok Annotations Accelerator Pack for iOS.
 
-## Add the library
+Inside it you will find the following sections:
 
-To get up and running quickly with your development, go through the following steps using CocoaPods:
+* [Prerequisites](#prerequisites): A checklist of everything you need to get started.
+* [Quickstart](#quickstart): A step by step tutorial to help you start developing using the OpenTok Annotations Accelerator Pack for iOS.
+* [Exploring the code](#exploring-the-code): Detailed information about APIs, class design and configuration of this accelerator pack.
+* [About OpenTok](#about-opentok): Information and additional resources of OpenTok's WebRTC platform. 
+
+## Prerequisites
+
+To be prepared to develop with the OpenTok Annotations Accelerator Pack for iOS:
+
+1. Get values for **API Key**, **Session ID**, and **Token**. See [Obtaining OpenTok Credentials](#obtaining-opentok-credentials) for important information.
+1. Install Xcode version 5 or later, with ARC enabled.
+2. Your device must be running iOS 8 or later.
+
+### Obtaining OpenTok Credentials
+
+To use OpenTok's framework you need a Session ID, Token, and API Key you can get these values at the [OpenTok Developer Dashboard](https://dashboard.tokbox.com/) . For production deployment, you must generate the Session ID and Token values using one of the [OpenTok Server SDKs](https://tokbox.com/developer/sdks/server/).
+
+## Quickstart
+To get up and running quickly with your app, go through the following steps:
+
+1. [Add the library](#add-the-library).
+2. [Configure and build the app](#configure-and-build-the-app).
+
+### Add the library
+
+To add the library and start with your development, go through the following steps using CocoaPods:
 
 1. Add the following line to your pod file: ` pod 'OTAnnotationKit'  `
-2. In a terminal prompt, navigate into your project directory and type `pod install`.
+2. In a terminal prompt, navigate into your project directory and type `pod install`. (Sometimes, pod update is magical)
 3. Reopen your project using the new `*.xcworkspace` file.
 
-For more information about CocoaPods, including installation instructions, visit [CocoaPods Getting Started](https://guides.cocoapods.org/using/getting-started.html#getting-started).
+_**NOTE:** For more information about CocoaPods, including installation instructions, visit [CocoaPods Getting Started](https://guides.cocoapods.org/using/getting-started.html#getting-started)._
 
 ### Configure and build the app
 
 Configure the sample app code. Then, build and run the app.
 
-1. Get values for **API Key**, **Session ID**, and **Token**. See [OpenTok One-to-One Communication Sample App home page](../README.md) for important information.
+1. Have at hand your values for **API Key**, **Session ID**, and **Token**. See [Obtaining OpenTok Credentials](#obtaining-opentok-credentials).
 
 1. In XCode, open **AppDelegate.h** and add [OTAcceleratorPackUtil](https://cocoapods.org/pods/OTAcceleratorPackUtil) by `#import <OTAcceleratorPackUtil/OTAcceleratorPackUtil.h>`
 
@@ -68,6 +91,7 @@ self.annotationView.toolbarView.frame = <# desired frame #>;
 ```
 
 If you would like to be annotated on either the entire screen or a specified portion of the screen:
+
 ```objc
 self.annotator = [[OTAnnotator alloc] init];
 [self.annotator connectForReceivingAnnotationWithSize:<# desired size #>
@@ -84,6 +108,7 @@ self.annotator.dataReceivingHandler = ^(NSArray *data) {
 ```
 
 If you would like to annotate on a remote client's screen:
+
 ```objc
 self.annotator = [[OTAnnotator alloc] init];
 [self.annotator connectForSendingAnnotationWithSize:self.sharer.subscriberView.frame.size
@@ -110,9 +135,18 @@ self.annotator.dataSendingHandler = ^(NSArray *data, NSError *error) {
 };
 ```
 
-## Requirements
+## Contribute
 
-To be prepared to develop with the Annotations Accelerator Pack for iOS:
+If you'd like to contribute to OpenTok Accelerator Pack development, please follow the guidelines in the [contributing files](/.github).
 
-1. Install Xcode version 5 or later, with ARC enabled.
-2. Your device must be running iOS 8 or later.
+
+## License
+
+This project is under the [MIT License](./LICENSE)
+
+
+# About OpenTok
+
+![logo](./tokbox-logo.png)
+
+The OpenTok platform, developed by TokBox, makes it easy to embed high-quality interactive video, voice, messaging, and screen sharing into web and mobile apps. For more info on how OpenTok works, check out our [Core Concepts](https://tokbox.com/developer/guides/core-concepts/).

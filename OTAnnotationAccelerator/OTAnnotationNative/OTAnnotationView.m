@@ -284,7 +284,7 @@
         OTAnnotationPoint *annotatinPoint = [OTAnnotationPoint pointWithX:touchPoint.x andY:touchPoint.y];
         [_localDrawPath drawToPoint:annotatinPoint];
         [self setNeedsDisplay];
-        [self commitCurrentAnnotatable];
+//        [self commitCurrentAnnotatable];
         [[AnnLoggingWrapper sharedInstance].logger logEventAction:KLogActionEndDrawing variation:KLogVariationSuccess completion:nil];
     }
 }
