@@ -2,7 +2,7 @@ platform :ios, '9.0'
 
 def shared_pods
 	pod 'LHToolbar', '= 1.3.0-beta'
-    pod 'OTAcceleratorCore’, '= 1.0.5'
+    pod 'OTAcceleratorCore’, '= 1.1.5'
 end
 
 target 'OTAnnotationAccelerator' do
