@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/opentok/accelerator-annotation-ios.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/tokbox/'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'OTAnnotationAccelerator/**/*'
 
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
     'OTAnnotationAcceleratorBundle' => ['OTAnnotationAcceleratorBundle/**/*']
   }
 
+  s.static_framework = true
   s.dependency 'LHToolbar', '1.3.0-beta'
   s.dependency 'OTAcceleratorCore'
 end
