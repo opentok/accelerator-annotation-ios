@@ -80,7 +80,10 @@
  *
  *  @param point The destination point of the line segment.
  */
-- (void)drawCurveToPoint:(OTAnnotationPoint *)toPoint;
+
+- (void)drawCurveToPoint:(OTAnnotationPoint *)fromPoint endPoint:(OTAnnotationPoint *)toPoint;
+
+- (void)addPoint:(OTAnnotationPoint *)point;
 
 /**
  *  Initialize a path with given existence coordinates and given strokeColor. The actual construction will not happen until you call drawWholePath.

@@ -94,19 +94,36 @@
     [self addPoint:point];
 }
 
-- (void)drawCurveToPoint:(OTAnnotationPoint *)toPoint {
-    
-    if (self.points.count == 0 || self.points.count == 1) {
-        [self addPoint:toPoint];
+- (void)drawToPoint:(OTAnnotationPoint *)fromPoint endPoint:(OTAnnotationPoint *)toPoint{
+
+    CGPoint endPoint = [toPoint cgPoint];
+    CGPoint startPoint = self.points.firstObject.cgPoint;
+    [self moveToPoint:startPoint];
+    [self addLineToPoint:endPoint];
+    [self addPoint:toPoint];
+}
+
+- (void)drawCurveToPoint:(OTAnnotationPoint *)fromPoint endPoint:(OTAnnotationPoint *)toPoint {
+
+    if (self.points.count == 0) {
+        [self addPoint:fromPoint];
     }
+
+    CGPoint seconLastPoint = self.points.count == 1? self.points.firstObject.cgPoint : self.points[self.points.count - 2].cgPoint;
+    CGPoint lastPoint = self.points.lastObject.cgPoint;
+    CGPoint middlePoint = CGPointMake((lastPoint.x + seconLastPoint.x) / 2, (lastPoint.y + seconLastPoint.y) / 2);
+    CGPoint controlPoint = CGPointMake((lastPoint.x + toPoint.x) / 2, (lastPoint.y + toPoint.y) / 2);
+
+    if (self.points.count == 1) {
+        [self addPoint:toPoint];
+
+        [self moveToPoint:self.points.firstObject.cgPoint];
+        [self addQuadCurveToPoint:controlPoint controlPoint:lastPoint];
+    }
+
     else {
-        CGPoint lastPoint = self.points.lastObject.cgPoint;
-        CGPoint seconLastPoint = self.points[self.points.count - 2].cgPoint;
-        
-        CGPoint middlePoint = CGPointMake((lastPoint.x + seconLastPoint.x) / 2, (lastPoint.y + seconLastPoint.y) / 2);
-        CGPoint controlPoint = CGPointMake((lastPoint.x + toPoint.x) / 2, (lastPoint.y + toPoint.y) / 2);
-        
-        [self moveToPoint:middlePoint];
+
+        [self moveToPoint:self.points.count != 1? middlePoint : self.points.firstObject.cgPoint];
         [self addQuadCurveToPoint:controlPoint controlPoint:lastPoint];
         [self addPoint:toPoint];
     }
@@ -114,11 +131,7 @@
 
 #pragma mark - private method
 - (void)addPoint:(OTAnnotationPoint *)touchPoint {
-    if (_mutablePoints.count == 0) {
-        _startPoint = [touchPoint cgPoint];
-    }
     [_mutablePoints addObject:touchPoint];
-    _endPoint = [touchPoint cgPoint];
 }
 @end
 

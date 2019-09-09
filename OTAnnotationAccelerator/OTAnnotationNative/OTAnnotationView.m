@@ -265,8 +265,10 @@
         }
         
         CGPoint touchPoint = [touch locationInView:touch.view];
+        CGPoint previousPoint = [touch previousLocationInView:touch.view];
+        OTAnnotationPoint *prevPoint = [OTAnnotationPoint pointWithX:previousPoint.x andY:previousPoint.y];
         OTAnnotationPoint *annotatinPoint = [OTAnnotationPoint pointWithX:touchPoint.x andY:touchPoint.y];
-        [_localDrawPath drawToPoint:annotatinPoint];
+        [_localDrawPath drawCurveToPoint:prevPoint endPoint:annotatinPoint];
         [self setNeedsDisplay];
     }
 }
@@ -284,7 +286,6 @@
         OTAnnotationPoint *annotatinPoint = [OTAnnotationPoint pointWithX:touchPoint.x andY:touchPoint.y];
         [_localDrawPath drawToPoint:annotatinPoint];
         [self setNeedsDisplay];
-//        [self commitCurrentAnnotatable];
         [[AnnLoggingWrapper sharedInstance].logger logEventAction:KLogActionEndDrawing variation:KLogVariationSuccess completion:nil];
     }
 }
