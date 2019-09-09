@@ -139,7 +139,7 @@ receivedSignalType:(NSString*)type
  fromConnection:(OTConnection*)connection
      withString:(NSString*)string {
     
-    if (self.stopReceivingAnnotaiton) return;
+    if (self.stopReceivingAnnotation) return;
     
     // TODO for the next person who sees this: a workaround for making the web annotation work
     if ([type isEqualToString:@"otAnnotation_requestPlatform"]) {
@@ -529,7 +529,7 @@ receivedSignalType:(NSString*)type
         path.strokeColor = self.annotationScrollView.toolbarView.colorPickerView.selectedColor;
     }
     
-    [self signalAnnotatble:annotationView.currentAnnotatable
+    [self signalAnnotatable:annotationView.currentAnnotatable
                      touch:touch
              addtionalInfo:@{@"startPoint":@(YES), @"endPoint":@(NO)}];
 }
@@ -544,7 +544,7 @@ receivedSignalType:(NSString*)type
         signalingPoints = [[NSMutableArray alloc] init];
     }
     
-    [self signalAnnotatble:annotationView.currentAnnotatable
+    [self signalAnnotatable:annotationView.currentAnnotatable
                      touch:touch
              addtionalInfo:@{@"startPoint":@(NO), @"endPoint":@(NO)}];
 
@@ -564,7 +564,7 @@ receivedSignalType:(NSString*)type
     if (self.stopSendingAnnotation) return;
     
     if (signalingPoint) {
-        [self signalAnnotatble:annotationView.currentAnnotatable
+        [self signalAnnotatable:annotationView.currentAnnotatable
                          touch:touch
                  addtionalInfo:@{@"startPoint":@(NO), @"endPoint":@(YES)}];  // the `endPoint` is not `NO` here because web does not recognize it, we can change this later.
     }
@@ -598,11 +598,11 @@ receivedSignalType:(NSString*)type
     signalingPoints = nil;
 }
 
-- (void)signalAnnotatble:(id<OTAnnotatable>)annotatble
+- (void)signalAnnotatable:(id<OTAnnotatable>)annotatable
                    touch:(UITouch *)touch
            addtionalInfo:(NSDictionary *)info {
     
-    if ([annotatble isKindOfClass:[OTAnnotationPath class]]) {
+    if ([annotatable isKindOfClass:[OTAnnotationPath class]]) {
         
         CGPoint touchPoint = [touch locationInView:touch.view];
         if (!signalingPoint) {

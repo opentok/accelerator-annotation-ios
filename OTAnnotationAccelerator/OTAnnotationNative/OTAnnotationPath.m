@@ -109,9 +109,9 @@
         [self addPoint:fromPoint];
     }
 
-    CGPoint seconLastPoint = self.points.count == 1? self.points.firstObject.cgPoint : self.points[self.points.count - 2].cgPoint;
+    CGPoint secondLastPoint = self.points.count == 1? self.points.firstObject.cgPoint : self.points[self.points.count - 2].cgPoint;
     CGPoint lastPoint = self.points.lastObject.cgPoint;
-    CGPoint middlePoint = CGPointMake((lastPoint.x + seconLastPoint.x) / 2, (lastPoint.y + seconLastPoint.y) / 2);
+    CGPoint middlePoint = CGPointMake((lastPoint.x + secondLastPoint.x) / 2, (lastPoint.y + secondLastPoint.y) / 2);
     CGPoint controlPoint = CGPointMake((lastPoint.x + toPoint.x) / 2, (lastPoint.y + toPoint.y) / 2);
 
     if (self.points.count == 1) {
