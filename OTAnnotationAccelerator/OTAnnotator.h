@@ -103,7 +103,7 @@ typedef void (^OTAnnotationDataReceivingBlock)(NSArray *data);
 
 @property (nonatomic) BOOL stopSendingAnnotation;
 
-@property (nonatomic) BOOL stopReceivingAnnotaiton;
+@property (nonatomic) BOOL stopReceivingAnnotation;
 
 - (void)cleanRemoteCanvas;
 
