@@ -423,7 +423,7 @@ receivedSignalType:(NSString*)type
     
     if ([json[@"smoothed"] boolValue]) {
 
-        [path drawCurveToPoint:pt1 endPoint:pt2];
+        [path drawCurveFrom:pt1 to:pt2];
 
         if ([json[@"endPoint"] boolValue]) {
             [path drawToPoint:pt2];
@@ -495,7 +495,7 @@ receivedSignalType:(NSString*)type
     
     if ([json[@"smoothed"] boolValue]) {
 
-        [path drawCurveToPoint:pt1 endPoint:pt2];
+        [path drawCurveFrom:pt1 to:pt2];
 
         if ([json[@"endPoint"] boolValue]) {
             [path drawToPoint:pt2];

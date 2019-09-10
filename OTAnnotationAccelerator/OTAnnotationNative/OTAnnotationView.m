@@ -268,7 +268,7 @@
         CGPoint previousPoint = [touch previousLocationInView:touch.view];
         OTAnnotationPoint *prevPoint = [OTAnnotationPoint pointWithX:previousPoint.x andY:previousPoint.y];
         OTAnnotationPoint *annotationPoint = [OTAnnotationPoint pointWithX:touchPoint.x andY:touchPoint.y];
-        [_localDrawPath drawCurveToPoint:prevPoint endPoint:annotationPoint];
+        [_localDrawPath drawCurveFrom:prevPoint to:annotationPoint];
         [self setNeedsDisplay];
     }
 }

@@ -84,14 +84,14 @@
     
     CGPoint cgPoint = [point cgPoint];
     [self moveToPoint:cgPoint];
-    [self addPoint:point];
+    [self addPointToCollection:point];
 }
 
 - (void)drawToPoint:(OTAnnotationPoint *)point {
     
     CGPoint cgPoint = [point cgPoint];
     [self addLineToPoint:cgPoint];
-    [self addPoint:point];
+    [self addPointToCollection:point];
 }
 
 - (void)drawToPoint:(OTAnnotationPoint *)fromPoint endPoint:(OTAnnotationPoint *)toPoint{
@@ -100,13 +100,13 @@
     CGPoint startPoint = self.points.firstObject.cgPoint;
     [self moveToPoint:startPoint];
     [self addLineToPoint:endPoint];
-    [self addPoint:toPoint];
+    [self addPointToCollection:toPoint];
 }
 
-- (void)drawCurveToPoint:(OTAnnotationPoint *)fromPoint endPoint:(OTAnnotationPoint *)toPoint {
+- (void)drawCurveFrom:(OTAnnotationPoint *)fromPoint to:(OTAnnotationPoint *)toPoint {
 
     if (self.points.count == 0) {
-        [self addPoint:fromPoint];
+        [self addPointToCollection:fromPoint];
     }
 
     CGPoint secondLastPoint = self.points.count == 1? self.points.firstObject.cgPoint : self.points[self.points.count - 2].cgPoint;
@@ -115,7 +115,7 @@
     CGPoint controlPoint = CGPointMake((lastPoint.x + toPoint.x) / 2, (lastPoint.y + toPoint.y) / 2);
 
     if (self.points.count == 1) {
-        [self addPoint:toPoint];
+        [self addPointToCollection:toPoint];
 
         [self moveToPoint:self.points.firstObject.cgPoint];
         [self addQuadCurveToPoint:controlPoint controlPoint:lastPoint];
@@ -125,12 +125,12 @@
 
         [self moveToPoint:self.points.count != 1? middlePoint : self.points.firstObject.cgPoint];
         [self addQuadCurveToPoint:controlPoint controlPoint:lastPoint];
-        [self addPoint:toPoint];
+        [self addPointToCollection:toPoint];
     }
 }
 
 #pragma mark - private method
-- (void)addPoint:(OTAnnotationPoint *)touchPoint {
+- (void)addPointToCollection:(OTAnnotationPoint *)touchPoint {
     [_mutablePoints addObject:touchPoint];
 }
 @end
