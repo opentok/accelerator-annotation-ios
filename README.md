@@ -1,4 +1,6 @@
-# OpenTok Annotations Accelerator Pack for iOS<br/> Version 1.0.0-Beta1
+# OpenTok Annotations Accelerator Pack for iOS
+
+<img src="https://assets.tokbox.com/img/vonage/Vonage_VideoAPI_black.svg" height="48px" alt="Tokbox is now known as Vonage" />
 
 This document describes how to use the OpenTok Annotations Accelerator Pack for iOS.
 
@@ -7,7 +9,6 @@ Inside it you will find the following sections:
 * [Prerequisites](#prerequisites): A checklist of everything you need to get started.
 * [Quickstart](#quickstart): A step by step tutorial to help you start developing using the OpenTok Annotations Accelerator Pack for iOS.
 * [Exploring the code](#exploring-the-code): Detailed information about APIs, class design and configuration of this accelerator pack.
-* [About OpenTok](#about-opentok): Information and additional resources of OpenTok's WebRTC platform. 
 
 ## Prerequisites
 
@@ -70,12 +71,12 @@ _**NOTE:** This accelerator pack collects anonymous usage data for internal TokB
 
 The following classes represent the software design for the OpenTok Annotations Accelerator Pack.
 
-| Class        | Description  |
-| ------------- | ------------- |
-| `OTAnnotator` | The core component for enabling remote annotation across devices and platforms. |  
-| `OTAnnotationScrollView` | Provides essentials components for annotating on either the entire screen or a specified portion of the screen. |
-| `OTAnnotationToolbarView`   | A convenient annotation toolbar that is optionally available for your development. As an alternative, you can create your own toolbar using `OTAnnotationScrollView`. |
-| `OTFullScreenAnnotationViewController`   | A convenient view controller enables you to annotate the whole screen immediately. |
+| Class                                  | Description                                                                                                                                                           |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `OTAnnotator`                          | The core component for enabling remote annotation across devices and platforms.                                                                                       |
+| `OTAnnotationScrollView`               | Provides essentials components for annotating on either the entire screen or a specified portion of the screen.                                                       |
+| `OTAnnotationToolbarView`              | A convenient annotation toolbar that is optionally available for your development. As an alternative, you can create your own toolbar using `OTAnnotationScrollView`. |
+| `OTFullScreenAnnotationViewController` | A convenient view controller enables you to annotate the whole screen immediately.                                                                                    |
 
 
 ### Annotation features
@@ -135,18 +136,19 @@ self.annotator.dataSendingHandler = ^(NSArray *data, NSError *error) {
 };
 ```
 
-## Contribute
+## Development and Contributing
 
-If you'd like to contribute to OpenTok Accelerator Pack development, please follow the guidelines in the [contributing files](/.github).
+Interested in contributing? We :heart: pull requests! See the [Contribution](CONTRIBUTING.md) guidelines.
 
+## Getting Help
 
-## License
+We love to hear from you so if you have questions, comments or find a bug in the project, let us know! You can either:
 
-This project is under the [MIT License](./LICENSE)
+- Open an issue on this repository
+- See <https://support.tokbox.com/> for support options
+- Tweet at us! We're [@VonageDev](https://twitter.com/VonageDev) on Twitter
+- Or [join the Vonage Developer Community Slack](https://developer.nexmo.com/community/slack)
 
+## Further Reading
 
-# About OpenTok
-
-![logo](./tokbox-logo.png)
-
-The OpenTok platform, developed by TokBox, makes it easy to embed high-quality interactive video, voice, messaging, and screen sharing into web and mobile apps. For more info on how OpenTok works, check out our [Core Concepts](https://tokbox.com/developer/guides/core-concepts/).
+- Check out the Developer Documentation at <https://tokbox.com/developer/>
