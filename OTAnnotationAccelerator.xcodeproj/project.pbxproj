@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C006B4143BDBD1374743756 /* libPods-OTAnnotationAcceleratorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5253AEB99C20586D7CF69BE /* libPods-OTAnnotationAcceleratorTests.a */; };
+		9D47F185176349E1489A4251 /* libPods-OTAnnotationAccelerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AB544FB607E918FC69F198 /* libPods-OTAnnotationAccelerator.a */; };
 		A018FABB1DA46B9100C118F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A018FAB91DA46B9100C118F9 /* Podfile */; };
 		A09DFEA71E92EB2A00BD5946 /* OTAnnotationAcceleratorBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A09DFEA61E92EB2A00BD5946 /* OTAnnotationAcceleratorBundle.bundle */; };
 		A09DFEA81E92EEFF00BD5946 /* SendAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DFEA31E92E8A000BD5946 /* SendAnnotationViewController.swift */; };
@@ -27,7 +29,6 @@
 		A0B38D181E8F8D8F00642C21 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE61E8F8D8F00642C21 /* UIColor+HexString.m */; };
 		A0B38D191E8F8D8F00642C21 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE81E8F8D8F00642C21 /* UIView+Helper.m */; };
 		A0B38D1A1E8F8D8F00642C21 /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CEA1E8F8D8F00642C21 /* UIViewController+Helper.m */; };
-		A0B38D1B1E8F8D8F00642C21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B38CEC1E8F8D8F00642C21 /* Info.plist */; };
 		A0B38D1C1E8F8D8F00642C21 /* OTAnnotationKitBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CEE1E8F8D8F00642C21 /* OTAnnotationKitBundle.m */; };
 		A0B38D1D1E8F8D8F00642C21 /* OTAnnotationDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CF21E8F8D8F00642C21 /* OTAnnotationDataManager.m */; };
 		A0B38D1E1E8F8D8F00642C21 /* OTAnnotationPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CF41E8F8D8F00642C21 /* OTAnnotationPath.m */; };
@@ -48,7 +49,6 @@
 		A0B38D4B1E8F8DD000642C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B38D311E8F8DD000642C21 /* Assets.xcassets */; };
 		A0B38D4C1E8F8DD000642C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B38D321E8F8DD000642C21 /* LaunchScreen.storyboard */; };
 		A0B38D4D1E8F8DD000642C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B38D341E8F8DD000642C21 /* Main.storyboard */; };
-		A0B38D4E1E8F8DD000642C21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B38D361E8F8DD000642C21 /* Info.plist */; };
 		A0B38D4F1E8F8DD000642C21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38D371E8F8DD000642C21 /* main.m */; };
 		A0B38D501E8F8DD000642C21 /* mvc.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B38D381E8F8DD000642C21 /* mvc.png */; };
 		A0B38D531E8F8DD000642C21 /* ReceiveAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38D3E1E8F8DD000642C21 /* ReceiveAnnotationViewController.m */; };
@@ -82,6 +82,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D9B2A8B347CBC969F13B1FB /* Pods-OTAnnotationAcceleratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAcceleratorTests.debug.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAcceleratorTests/Pods-OTAnnotationAcceleratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86AB544FB607E918FC69F198 /* libPods-OTAnnotationAccelerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OTAnnotationAccelerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAD283866C2B496179A051A /* Pods-OTAnnotationAccelerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAccelerator.release.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAccelerator/Pods-OTAnnotationAccelerator.release.xcconfig"; sourceTree = "<group>"; };
 		A018FAB91DA46B9100C118F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A09DFEA31E92E8A000BD5946 /* SendAnnotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAnnotationViewController.swift; sourceTree = "<group>"; };
 		A09DFEA61E92EB2A00BD5946 /* OTAnnotationAcceleratorBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OTAnnotationAcceleratorBundle.bundle; sourceTree = "<group>"; };
@@ -166,6 +169,9 @@
 		A0B38DB41E8F8F1000642C21 /* OTAnnotationAccelerator-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTAnnotationAccelerator-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0B38DB51E8F913000642C21 /* OTAnnotationAccelerator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OTAnnotationAccelerator.podspec; sourceTree = "<group>"; };
 		A0DB6E481D230BC900E14C86 /* OTAnnotationAccelerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTAnnotationAccelerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5253AEB99C20586D7CF69BE /* libPods-OTAnnotationAcceleratorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OTAnnotationAcceleratorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ABE4C23744B29777786C05 /* Pods-OTAnnotationAcceleratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAcceleratorTests.release.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAcceleratorTests/Pods-OTAnnotationAcceleratorTests.release.xcconfig"; sourceTree = "<group>"; };
+		C61854348DFF6CF33A19F04B /* Pods-OTAnnotationAccelerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAccelerator.debug.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAccelerator/Pods-OTAnnotationAccelerator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C006B4143BDBD1374743756 /* libPods-OTAnnotationAcceleratorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,12 +194,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D47F185176349E1489A4251 /* libPods-OTAnnotationAccelerator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83A6E7D3A53733E79F2B550E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C61854348DFF6CF33A19F04B /* Pods-OTAnnotationAccelerator.debug.xcconfig */,
+				8AAD283866C2B496179A051A /* Pods-OTAnnotationAccelerator.release.xcconfig */,
+				0D9B2A8B347CBC969F13B1FB /* Pods-OTAnnotationAcceleratorTests.debug.xcconfig */,
+				C1ABE4C23744B29777786C05 /* Pods-OTAnnotationAcceleratorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A0B38CDB1E8F8D8F00642C21 /* OTAnnotationAccelerator */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +385,8 @@
 				A0B38D9F1E8F8DF200642C21 /* OTAnnotationAcceleratorBundle */,
 				A0B38D751E8F8DE800642C21 /* OTAnnotationAcceleratorTests */,
 				A0DB6E491D230BC900E14C86 /* Products */,
+				83A6E7D3A53733E79F2B550E /* Pods */,
+				CE7D70CDA9F8505838EB40FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -379,6 +400,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CE7D70CDA9F8505838EB40FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86AB544FB607E918FC69F198 /* libPods-OTAnnotationAccelerator.a */,
+				B5253AEB99C20586D7CF69BE /* libPods-OTAnnotationAcceleratorTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,9 +416,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0AB57801D2C392D00F8410B /* Build configuration list for PBXNativeTarget "OTAnnotationAcceleratorTests" */;
 			buildPhases = (
+				EBB2B4B0C9131E45D7670B73 /* [CP] Check Pods Manifest.lock */,
 				A0AB57691D2C392D00F8410B /* Sources */,
 				A0AB576A1D2C392D00F8410B /* Frameworks */,
 				A0AB576B1D2C392D00F8410B /* Resources */,
+				7F0F89A0B6D5908932DFA16F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,10 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DB6E5F1D230BC900E14C86 /* Build configuration list for PBXNativeTarget "OTAnnotationAccelerator" */;
 			buildPhases = (
+				4308EEAA57E2A64CAB57884C /* [CP] Check Pods Manifest.lock */,
 				A0DB6E441D230BC900E14C86 /* Sources */,
 				A0DB6E451D230BC900E14C86 /* Frameworks */,
 				A0DB6E461D230BC900E14C86 /* Resources */,
 				A0DB6E731D230BF500E14C86 /* Embed Frameworks */,
+				B31E2DE173E7B38710C0E173 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,6 +498,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -504,16 +539,97 @@
 				A09DFEA71E92EB2A00BD5946 /* OTAnnotationAcceleratorBundle.bundle in Resources */,
 				A0B38DB61E8F913000642C21 /* OTAnnotationAccelerator.podspec in Resources */,
 				A0B38D501E8F8DD000642C21 /* mvc.png in Resources */,
-				A0B38D1B1E8F8D8F00642C21 /* Info.plist in Resources */,
 				A018FABB1DA46B9100C118F9 /* Podfile in Resources */,
 				A0B38D4B1E8F8DD000642C21 /* Assets.xcassets in Resources */,
 				A0B38D4D1E8F8DD000642C21 /* Main.storyboard in Resources */,
 				A0B38D4C1E8F8DD000642C21 /* LaunchScreen.storyboard in Resources */,
-				A0B38D4E1E8F8DD000642C21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4308EEAA57E2A64CAB57884C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTAnnotationAccelerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0F89A0B6D5908932DFA16F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTAnnotationAcceleratorTests/Pods-OTAnnotationAcceleratorTests-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTAnnotationAcceleratorTests/Pods-OTAnnotationAcceleratorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B31E2DE173E7B38710C0E173 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTAnnotationAccelerator/Pods-OTAnnotationAccelerator-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTAnnotationAccelerator/Pods-OTAnnotationAccelerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB2B4B0C9131E45D7670B73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTAnnotationAcceleratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0AB57691D2C392D00F8410B /* Sources */ = {
@@ -606,6 +722,7 @@
 /* Begin XCBuildConfiguration section */
 		A0AB577D1D2C392D00F8410B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9B2A8B347CBC969F13B1FB /* Pods-OTAnnotationAcceleratorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +738,7 @@
 		};
 		A0AB577E1D2C392D00F8410B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1ABE4C23744B29777786C05 /* Pods-OTAnnotationAcceleratorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -757,6 +875,7 @@
 		};
 		A0DB6E601D230BC900E14C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61854348DFF6CF33A19F04B /* Pods-OTAnnotationAccelerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -767,12 +886,13 @@
 				PRODUCT_NAME = OTAnnotationAccelerator;
 				SWIFT_OBJC_BRIDGING_HEADER = "OTAnnotationAcceleratorSample/OTAnnotationAccelerator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		A0DB6E611D230BC900E14C86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAD283866C2B496179A051A /* Pods-OTAnnotationAccelerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -782,7 +902,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tokbox.OpenTokAnnotationAccPackDemo;
 				PRODUCT_NAME = OTAnnotationAccelerator;
 				SWIFT_OBJC_BRIDGING_HEADER = "OTAnnotationAcceleratorSample/OTAnnotationAccelerator-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
