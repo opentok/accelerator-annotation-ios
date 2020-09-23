@@ -155,7 +155,7 @@
                             <constraint firstItem="YXv-DR-NFZ" firstAttribute="leading" secondItem="uUJ-hr-M9I" secondAttribute="leading" id="2gB-YD-kV3"/>
                             <constraint firstItem="u2Y-n0-oQ6" firstAttribute="leading" secondItem="uUJ-hr-M9I" secondAttribute="leading" id="EWx-5z-XZj"/>
                             <constraint firstItem="u2Y-n0-oQ6" firstAttribute="top" secondItem="KOx-1a-Hds" secondAttribute="bottom" id="b3a-Ur-Pcz"/>
-                            <constraint firstAttribute="bottom" secondItem="YXv-DR-NFZ" secondAttribute="bottom" id="cRW-Ox-bGQ"/>
+                            <constraint firstItem="6on-lC-MHG" firstAttribute="top" secondItem="YXv-DR-NFZ" secondAttribute="bottom" id="cRW-Ox-bGQ"/>
                             <constraint firstAttribute="trailing" secondItem="YXv-DR-NFZ" secondAttribute="trailing" id="hWV-h0-HwZ"/>
                             <constraint firstItem="YXv-DR-NFZ" firstAttribute="top" secondItem="u2Y-n0-oQ6" secondAttribute="bottom" id="rpy-1J-O5i"/>
                             <constraint firstAttribute="trailing" secondItem="u2Y-n0-oQ6" secondAttribute="trailing" id="zxB-nK-S49"/>
@@ -196,7 +196,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="k3O-G8-BYv" firstAttribute="top" secondItem="dCy-nw-JHC" secondAttribute="bottom" id="HdI-wT-Ib7"/>
-                            <constraint firstAttribute="bottom" secondItem="k3O-G8-BYv" secondAttribute="bottom" id="Qs9-it-BSg"/>
+                            <constraint firstItem="Ud7-Da-uNK" firstAttribute="top" secondItem="k3O-G8-BYv" secondAttribute="bottom" id="Qs9-it-BSg"/>
                             <constraint firstItem="k3O-G8-BYv" firstAttribute="leading" secondItem="i1v-ZP-ebb" secondAttribute="leading" id="ZBK-oS-mpt"/>
                             <constraint firstAttribute="trailing" secondItem="dCy-nw-JHC" secondAttribute="trailing" id="bUU-g4-BF2"/>
                             <constraint firstItem="dCy-nw-JHC" firstAttribute="leading" secondItem="i1v-ZP-ebb" secondAttribute="leading" id="duR-nc-HCW"/>
