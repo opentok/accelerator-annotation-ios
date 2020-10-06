@@ -32,7 +32,7 @@ To get up and running quickly with your app, go through the following steps:
 
 To add the library and start with your development, go through the following steps using CocoaPods:
 
-1. Add the following line to your pod file: ` pod 'OTAnnotationKit'  `
+1. Add the following line to your pod file: ` pod 'OTAnnotationAccelerator'  `
 2. In a terminal prompt, navigate into your project directory and type `pod install`. (Sometimes, pod update is magical)
 3. Reopen your project using the new `*.xcworkspace` file.
 
@@ -44,9 +44,7 @@ Configure the sample app code. Then, build and run the app.
 
 1. Have at hand your values for **API Key**, **Session ID**, and **Token**. See [Obtaining OpenTok Credentials](#obtaining-opentok-credentials).
 
-1. In XCode, open **AppDelegate.h** and add [OTAcceleratorPackUtil](https://cocoapods.org/pods/OTAcceleratorPackUtil) by `#import <OTAcceleratorPackUtil/OTAcceleratorPackUtil.h>`
-
-1. Replace the following empty strings with the corresponding **API Key**, **Session ID**, and **Token** values:
+1. Replace the following empty strings with the corresponding **API Key**, **Session ID**, and **Token** values in `AppDelegate.m`:
 
     ```objc
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
