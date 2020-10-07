@@ -27,7 +27,6 @@
 		A0B38D161E8F8D8F00642C21 /* OTAnnotationToolbarView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE21E8F8D8F00642C21 /* OTAnnotationToolbarView+Animation.m */; };
 		A0B38D171E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE41E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m */; };
 		A0B38D181E8F8D8F00642C21 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE61E8F8D8F00642C21 /* UIColor+HexString.m */; };
-		A0B38D191E8F8D8F00642C21 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CE81E8F8D8F00642C21 /* UIView+Helper.m */; };
 		A0B38D1A1E8F8D8F00642C21 /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CEA1E8F8D8F00642C21 /* UIViewController+Helper.m */; };
 		A0B38D1C1E8F8D8F00642C21 /* OTAnnotationKitBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CEE1E8F8D8F00642C21 /* OTAnnotationKitBundle.m */; };
 		A0B38D1D1E8F8D8F00642C21 /* OTAnnotationDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B38CF21E8F8D8F00642C21 /* OTAnnotationDataManager.m */; };
@@ -100,8 +99,6 @@
 		A0B38CE41E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AutoLayoutHelper.m"; sourceTree = "<group>"; };
 		A0B38CE51E8F8D8F00642C21 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		A0B38CE61E8F8D8F00642C21 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
-		A0B38CE71E8F8D8F00642C21 /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
-		A0B38CE81E8F8D8F00642C21 /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
 		A0B38CE91E8F8D8F00642C21 /* UIViewController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
 		A0B38CEA1E8F8D8F00642C21 /* UIViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
 		A0B38CEB1E8F8D8F00642C21 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -241,8 +238,6 @@
 				A0B38CE41E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m */,
 				A0B38CE51E8F8D8F00642C21 /* UIColor+HexString.h */,
 				A0B38CE61E8F8D8F00642C21 /* UIColor+HexString.m */,
-				A0B38CE71E8F8D8F00642C21 /* UIView+Helper.h */,
-				A0B38CE81E8F8D8F00642C21 /* UIView+Helper.m */,
 				A0B38CE91E8F8D8F00642C21 /* UIViewController+Helper.h */,
 				A0B38CEA1E8F8D8F00642C21 /* UIViewController+Helper.m */,
 			);
@@ -685,7 +680,6 @@
 				A0B38D141E8F8D8F00642C21 /* AnnLoggingWrapper.m in Sources */,
 				A0B38D281E8F8D8F00642C21 /* OTAnnotationToolbarView.m in Sources */,
 				A0B38D171E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m in Sources */,
-				A0B38D191E8F8D8F00642C21 /* UIView+Helper.m in Sources */,
 				A0B38D531E8F8DD000642C21 /* ReceiveAnnotationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

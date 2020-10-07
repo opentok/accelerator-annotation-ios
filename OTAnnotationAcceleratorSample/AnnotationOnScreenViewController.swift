@@ -35,6 +35,7 @@ class AnnotationOnScreenViewController: UIViewController {
     
     @objc func startAnnotation() {
         self.statusBarHidden = true
+        self.setNeedsStatusBarAppearanceUpdate()
         let navigationBarFrame = navigationController!.navigationBar.frame
         let newFrame = CGRect(x: navigationBarFrame.origin.x, y: navigationBarFrame.origin.y, width: navigationBarFrame.size.width, height: 64)
         navigationController!.navigationBar.frame = newFrame
@@ -43,6 +44,7 @@ class AnnotationOnScreenViewController: UIViewController {
     
     @objc func stopAnnotation() {
         self.statusBarHidden = false
+        self.setNeedsStatusBarAppearanceUpdate()
         self.dismiss(animated: true, completion: nil)
     }
 }

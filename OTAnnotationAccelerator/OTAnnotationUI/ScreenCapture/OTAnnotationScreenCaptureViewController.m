@@ -57,11 +57,9 @@
         [self presentViewController:self.activityViewController animated:YES completion:nil];
     }
     else {
-        UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:self.activityViewController];
-        [popup presentPopoverFromRect:self.captureView.shareButton.bounds
-                               inView:self.captureView.shareButton
-             permittedArrowDirections:UIPopoverArrowDirectionAny
-                             animated:YES];
+        self.activityViewController.modalPresentationStyle = UIModalPresentationPopover;
+        self.activityViewController.popoverPresentationController.sourceView = self.captureView.shareButton;
+        [self presentViewController:self.activityViewController animated:YES completion:nil];
     }
 }
 
