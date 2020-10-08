@@ -134,6 +134,10 @@ self.annotator.dataSendingHandler = ^(NSArray *data, NSError *error) {
 };
 ```
 
+## 3rd Party Libraries
+
+- [LHToolbar](https://github.com/Lucashuang0802/LHToolbar)
+
 ## Development and Contributing
 
 Interested in contributing? We :heart: pull requests! See the [Contribution](CONTRIBUTING.md) guidelines.

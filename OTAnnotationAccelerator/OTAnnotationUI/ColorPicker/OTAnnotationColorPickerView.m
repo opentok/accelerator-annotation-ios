@@ -8,6 +8,7 @@
 #import "UIButton+AutoLayoutHelper.h"
 #import "UIView+Helper.h"
 #import "Constants.h"
+#import "LHToolbar.h"
 
 #pragma mark - ScreenShareColorPickerViewButton
 @interface OTAnnotationColorPickerViewButton()
@@ -129,8 +130,6 @@
 
 @end
 
-
-#import <LHToolbar/LHToolbar.h>
 
 #pragma mark - ScreenShareColorPickerView
 @interface OTAnnotationColorPickerView()
