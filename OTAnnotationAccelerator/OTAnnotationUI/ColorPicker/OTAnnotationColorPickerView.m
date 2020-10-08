@@ -31,7 +31,7 @@
         _container.clipsToBounds = YES;
         _container.userInteractionEnabled = NO;
         _container.translatesAutoresizingMaskIntoConstraints = NO;
-        _container.backgroundColor = [OTAnnotationColorPickerView.class blueColor];
+        _container.backgroundColor = ((UIColor *)[OTAnnotationColorPickerView.class blueColor]);
     }
     return self;
 }

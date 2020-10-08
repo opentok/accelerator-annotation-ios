@@ -13,6 +13,7 @@
 }
 @property (nonatomic) OTAnnotationTextView *annotationTextView;
 @property (nonatomic) UIPickerView *changeFontPickerView;
+@property (nonatomic) BOOL statusBarHidden;
 @end
 
 @implementation OTAnnotationEditTextViewController
@@ -73,7 +74,8 @@
     [super viewWillAppear:animated];
     
     shouldStatusShowAfterDismissal = ![UIApplication sharedApplication].isStatusBarHidden;
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    self.statusBarHidden = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
     [self.annotationTextView becomeFirstResponder];
 }
 
@@ -84,7 +86,8 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     if (shouldStatusShowAfterDismissal) {
-        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        self.statusBarHidden = NO;
+        [self setNeedsStatusBarAppearanceUpdate];
     }
     [self.annotationTextView resignFirstResponder];
     [[NSNotificationCenter defaultCenter] removeObserver:self];

@@ -32,13 +32,18 @@ class AnnotationBlankCanvasViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let screenRect = UIScreen.main.bounds;
+        var safeAreaOffset: CGFloat = 0
+            
+        if #available(iOS 11.0, *) {
+            safeAreaOffset = self.view.safeAreaInsets.bottom
+        }
         
         // portrait
         if screenRect.width < screenRect.height {
             annotationScrollView.frame = CGRect(x: 0, y: 0, width: screenRect.width, height: screenRect.height - heightOfToolbar - topOffset)
             annotationScrollView.scrollView.contentSize = CGSize(width: screenRect.width, height: screenRect.height - heightOfToolbar - topOffset)
             
-            annotationScrollView.toolbarView!.frame = CGRect(x: 0, y: screenRect.height - heightOfToolbar - topOffset, width: screenRect.width, height: heightOfToolbar)
+            annotationScrollView.toolbarView!.frame = CGRect(x: 0, y: screenRect.height - heightOfToolbar - topOffset - safeAreaOffset , width: screenRect.width, height: heightOfToolbar)
             annotationScrollView.toolbarView?.toolbarViewOrientation = .portraitlBottom
         }
         else {
@@ -46,7 +51,7 @@ class AnnotationBlankCanvasViewController: UIViewController {
             // landscape left
 //            annotationScrollView.frame = CGRectMake(widthOfToolbar, 0, CGRectGetWidth(screenRect) - widthOfToolbar, CGRectGetHeight(screenRect) - topOffsetForLandscape)
 //            annotationScrollView.scrollView.contentSize = CGSizeMake(CGRectGetWidth(screenRect) - widthOfToolbar, CGRectGetHeight(screenRect) - topOffsetForLandscape)
-//            
+//
 //            annotationScrollView.toolbarView!.frame = CGRectMake(0, 0, widthOfToolbar, CGRectGetHeight(screenRect) - topOffsetForLandscape)
 //            annotationScrollView.toolbarView?.toolbarViewOrientation = .LandscapeLeft
 
@@ -54,7 +59,7 @@ class AnnotationBlankCanvasViewController: UIViewController {
             annotationScrollView.frame = CGRect(x: 0, y: 0, width: screenRect.width - widthOfToolbar, height: screenRect.height - topOffsetForLandscape)
             annotationScrollView.scrollView.contentSize = CGSize(width: screenRect.width - widthOfToolbar, height: screenRect.height - topOffsetForLandscape)
             
-            annotationScrollView.toolbarView!.frame = CGRect(x: screenRect.width - widthOfToolbar, y: 0, width: widthOfToolbar, height: screenRect.height - topOffsetForLandscape)
+            annotationScrollView.toolbarView!.frame = CGRect(x: screenRect.width - widthOfToolbar, y: -safeAreaOffset, width: widthOfToolbar, height: screenRect.height - topOffsetForLandscape)
             annotationScrollView.toolbarView?.toolbarViewOrientation = .landscapeRight
         }
     }
