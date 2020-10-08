@@ -1,8 +1,7 @@
 PODS:
   - Kiwi (3.0.0)
-  - LHToolbar (1.3.0-beta)
   - OpenTok (2.18.0)
-  - OTAcceleratorCore (2.0.0):
+  - OTAcceleratorCore (2.0.1):
     - OpenTok (= 2.18.0)
     - OTKAnalytics (= 2.1.2)
     - SVProgressHUD (= 2.2.5)
@@ -11,13 +10,11 @@ PODS:
 
 DEPENDENCIES:
   - Kiwi
-  - LHToolbar (= 1.3.0-beta)
-  - OTAcceleratorCore (= 2.0.0)
+  - OTAcceleratorCore (= 2.0.1)
 
 SPEC REPOS:
   trunk:
     - Kiwi
-    - LHToolbar
     - OpenTok
     - OTAcceleratorCore
     - OTKAnalytics
@@ -25,12 +22,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
-  LHToolbar: 130834d93d2ec2b145d4e1012e3e9fa1d7c57e59
   OpenTok: bf4c81ff741e7976542c61b8f317882f8076eede
-  OTAcceleratorCore: 1c609b99a97c60d0e67519bbede296232d21af0f
+  OTAcceleratorCore: 345f45ef7ee118d532d1173ec2c2ee2be7ba68e9
   OTKAnalytics: 2de2f8971b5af7f313882ada0b1eae25104296f4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 844f2d5e652358f31a29e45b55279caee3a44d31
+PODFILE CHECKSUM: 3e9885db7b8c6675bac9ac188ec746352cdea2bd
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.rc.1

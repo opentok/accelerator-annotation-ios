@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E8C327252F6D3E008DDAD7 /* LHToolbarContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E8C322252F6D3E008DDAD7 /* LHToolbarContainerView.m */; };
+		12E8C328252F6D3E008DDAD7 /* LHToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E8C324252F6D3E008DDAD7 /* LHToolbar.m */; };
+		12E8C329252F6D3E008DDAD7 /* LHToolbarContainerViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E8C325252F6D3E008DDAD7 /* LHToolbarContainerViewItem.m */; };
 		9C006B4143BDBD1374743756 /* libPods-OTAnnotationAcceleratorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5253AEB99C20586D7CF69BE /* libPods-OTAnnotationAcceleratorTests.a */; };
 		9D47F185176349E1489A4251 /* libPods-OTAnnotationAccelerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AB544FB607E918FC69F198 /* libPods-OTAnnotationAccelerator.a */; };
 		A018FABB1DA46B9100C118F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A018FAB91DA46B9100C118F9 /* Podfile */; };
@@ -82,6 +85,12 @@
 
 /* Begin PBXFileReference section */
 		0D9B2A8B347CBC969F13B1FB /* Pods-OTAnnotationAcceleratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAcceleratorTests.debug.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAcceleratorTests/Pods-OTAnnotationAcceleratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12E8C321252F6D3E008DDAD7 /* LHToolbarContainerViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHToolbarContainerViewItem.h; sourceTree = "<group>"; };
+		12E8C322252F6D3E008DDAD7 /* LHToolbarContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHToolbarContainerView.m; sourceTree = "<group>"; };
+		12E8C323252F6D3E008DDAD7 /* LHToolbarContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHToolbarContainerView.h; sourceTree = "<group>"; };
+		12E8C324252F6D3E008DDAD7 /* LHToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHToolbar.m; sourceTree = "<group>"; };
+		12E8C325252F6D3E008DDAD7 /* LHToolbarContainerViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHToolbarContainerViewItem.m; sourceTree = "<group>"; };
+		12E8C326252F6D3E008DDAD7 /* LHToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHToolbar.h; sourceTree = "<group>"; };
 		86AB544FB607E918FC69F198 /* libPods-OTAnnotationAccelerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OTAnnotationAccelerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAD283866C2B496179A051A /* Pods-OTAnnotationAccelerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAnnotationAccelerator.release.xcconfig"; path = "Target Support Files/Pods-OTAnnotationAccelerator/Pods-OTAnnotationAccelerator.release.xcconfig"; sourceTree = "<group>"; };
 		A018FAB91DA46B9100C118F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -197,6 +206,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E8C320252F6D0C008DDAD7 /* LHToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				12E8C326252F6D3E008DDAD7 /* LHToolbar.h */,
+				12E8C324252F6D3E008DDAD7 /* LHToolbar.m */,
+				12E8C323252F6D3E008DDAD7 /* LHToolbarContainerView.h */,
+				12E8C322252F6D3E008DDAD7 /* LHToolbarContainerView.m */,
+				12E8C321252F6D3E008DDAD7 /* LHToolbarContainerViewItem.h */,
+				12E8C325252F6D3E008DDAD7 /* LHToolbarContainerViewItem.m */,
+			);
+			path = LHToolbar;
+			sourceTree = "<group>";
+		};
 		83A6E7D3A53733E79F2B550E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +240,7 @@
 				A0B38CED1E8F8D8F00642C21 /* OTAnnotationKitBundle.h */,
 				A0B38CEE1E8F8D8F00642C21 /* OTAnnotationKitBundle.m */,
 				A0B38CEF1E8F8D8F00642C21 /* OTAnnotationNative */,
+				12E8C320252F6D0C008DDAD7 /* LHToolbar */,
 				A0B38CFC1E8F8D8F00642C21 /* OTAnnotationUI */,
 				A0B38D121E8F8D8F00642C21 /* OTAnnotator.h */,
 				A0B38D131E8F8D8F00642C21 /* OTAnnotator.m */,
@@ -666,6 +689,7 @@
 				A0B38D491E8F8DD000642C21 /* AnnotationOnScreenViewController.swift in Sources */,
 				A0B38D1C1E8F8D8F00642C21 /* OTAnnotationKitBundle.m in Sources */,
 				A09DFEA81E92EEFF00BD5946 /* SendAnnotationViewController.swift in Sources */,
+				12E8C328252F6D3E008DDAD7 /* LHToolbar.m in Sources */,
 				A0B38D1F1E8F8D8F00642C21 /* OTAnnotationTextView+Gesture.m in Sources */,
 				A0B38D221E8F8D8F00642C21 /* OTAnnotationColorPickerView.m in Sources */,
 				A0B38D151E8F8D8F00642C21 /* JSON.m in Sources */,
@@ -675,6 +699,8 @@
 				A0B38D201E8F8D8F00642C21 /* OTAnnotationTextView.m in Sources */,
 				A0B38D4A1E8F8DD000642C21 /* AppDelegate.m in Sources */,
 				A0B38D241E8F8D8F00642C21 /* OTFullScreenAnnotationViewController.m in Sources */,
+				12E8C329252F6D3E008DDAD7 /* LHToolbarContainerViewItem.m in Sources */,
+				12E8C327252F6D3E008DDAD7 /* LHToolbarContainerView.m in Sources */,
 				A0B38D141E8F8D8F00642C21 /* AnnLoggingWrapper.m in Sources */,
 				A0B38D281E8F8D8F00642C21 /* OTAnnotationToolbarView.m in Sources */,
 				A0B38D171E8F8D8F00642C21 /* UIButton+AutoLayoutHelper.m in Sources */,

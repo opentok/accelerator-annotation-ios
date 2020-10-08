@@ -72,13 +72,13 @@ NSString * const kOTAnnotationToolbarDidAddTextAnnotation = @"kOTAnnotationToolb
 #import "OTAnnotationColorPickerView.h"
 #import "OTAnnotationKitBundle.h"
 
-#import <LHToolbar/LHToolbar.h>
 #import "AnnLoggingWrapper.h"
 
 #import "OTAnnotationScreenCaptureViewController.h"
 #import "OTAnnotationEditTextViewController.h"
 #import "UIViewController+Helper.h"
 #import "Constants.h"
+#import "LHToolbar.h"
 
 #import "OTAnnotationToolbarView_Private.h"
 
