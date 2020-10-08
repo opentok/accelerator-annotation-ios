@@ -102,7 +102,6 @@
 		A0B38CE91E8F8D8F00642C21 /* UIViewController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
 		A0B38CEA1E8F8D8F00642C21 /* UIViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
 		A0B38CEB1E8F8D8F00642C21 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		A0B38CEC1E8F8D8F00642C21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B38CED1E8F8D8F00642C21 /* OTAnnotationKitBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAnnotationKitBundle.h; sourceTree = "<group>"; };
 		A0B38CEE1E8F8D8F00642C21 /* OTAnnotationKitBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAnnotationKitBundle.m; sourceTree = "<group>"; };
 		A0B38CF01E8F8D8F00642C21 /* OTAnnotatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAnnotatable.h; sourceTree = "<group>"; };
@@ -216,7 +215,6 @@
 				A0B38CDD1E8F8D8F00642C21 /* AnnLoggingWrapper.m */,
 				A0B38CDE1E8F8D8F00642C21 /* Category */,
 				A0B38CEB1E8F8D8F00642C21 /* Constants.h */,
-				A0B38CEC1E8F8D8F00642C21 /* Info.plist */,
 				A0B38CED1E8F8D8F00642C21 /* OTAnnotationKitBundle.h */,
 				A0B38CEE1E8F8D8F00642C21 /* OTAnnotationKitBundle.m */,
 				A0B38CEF1E8F8D8F00642C21 /* OTAnnotationNative */,
