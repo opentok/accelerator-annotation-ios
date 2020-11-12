@@ -2,6 +2,10 @@
 
 <img src="https://assets.tokbox.com/img/vonage/Vonage_VideoAPI_black.svg" height="48px" alt="Tokbox is now known as Vonage" />
 
+# **This project is deprecated**
+## The OpenTok Annotations Accelerator Pack for iOS project is now a part of [Accelerator Core iOS](https://github.com/opentok/accelerator-core-ios)
+
+
 This document describes how to use the OpenTok Annotations Accelerator Pack for iOS.
 
 Inside it you will find the following sections:
